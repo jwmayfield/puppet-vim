@@ -1,5 +1,5 @@
 # Installs vim from homebrew
-define vim::install {
+class vim::install {
   package { 'vim':
     require => Package['mercurial']
   }

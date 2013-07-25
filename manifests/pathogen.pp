@@ -5,7 +5,7 @@
 #   include vim
 #   vim::pathogen
 
-define vim::pathogen {
+class vim::pathogen {
   require vim
 
   file { [$vimdir,
