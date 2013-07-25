@@ -6,7 +6,9 @@
 #   vim::pathogen
 
 class vim::pathogen {
-  include vim
+  $home = "/Users/${::boxen_user}"
+  $vimrc = "${home}/.vimrc"
+  $vimdir = "${home}/.vim"
 
   file { [$vimdir,
     "${vimdir}/autoload",
