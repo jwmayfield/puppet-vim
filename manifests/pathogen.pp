@@ -6,7 +6,7 @@
 #   vim::pathogen
 
 class vim::pathogen {
-  require vim
+  include vim
 
   file { [$vimdir,
     "${vimdir}/autoload",
